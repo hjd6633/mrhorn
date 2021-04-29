@@ -1,0 +1,544 @@
+/ ************ Color Pallette *************
+    orange: #FFD300 (239,178,72)
+    black:  #0c0c0c (12,12,12)
+    grey:   #ededed (237,237,237)
+    red:    #EF233C ()
+    dark: #2B2D42 ()
+    white: #8D99AE()
+*/
+
+/* Fix & Web Fonts
+-------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object,iframe, h1, h2, h3, h4, h5, h6, p,blockquote, pre, a, abbr, acronym,address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Global Style
+-------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.8;
+}
+
+main{
+  margin: 0 auto;
+  /* padding: 60px 50px; */
+  overflow: hidden;
+}
+.coloredbg{
+  background: #EDEDED;
+}
+
+
+h1{
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  /* font-size: 250%; */
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  line-height: 1.25;
+  margin-top: 0;
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 150%;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top:0;
+}
+.title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 0.3em;
+}
+
+
+.byline{
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+.byline span{
+padding: 0 0.3em;
+}
+
+
+ul{
+  list-style-type: disc;
+  list-style-position: outside;
+  line-height: 2;
+}
+
+table{
+  text-align: left;
+  margin: 2em 0 0 0 ;
+}
+tr{
+  border-bottom: 1px dotted lightgrey;
+}
+th{
+  margin: 0;
+  padding: 0;
+  width: 30%;
+}
+td{
+  padding-left: 5em;
+  padding: 0.8em 0 0.8em 2em;
+  width: 70%;
+}
+
+a:hover{
+    color: #FFD300;
+}
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.content-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6em 4.5em 6em 4.5em;
+  overflow: hidden;
+  /* outline: 1px solid black; */
+}
+
+
+/* Header and Footer Styles
+-------------------------------*/
+header{
+  background-color: #2B2D42;
+  background-image: url(https://i.loli.net/2021/04/28/cupBOLFvQto2wxR.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+}
+.alpha-bg{
+  background: rgba(43,45,66, 0.7);
+  padding: 5% 0 7% 0;
+}
+#mrhorn_logo{
+  display: block;
+  width: 20vw;
+  margin: -1% auto 3% auto;
+}
+nav{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+nav a{
+  display: inline-block;
+  font-size: 95%;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #EF233C;
+  color: white;
+}
+img{
+  width: 100%;
+}
+/* PRODUCT DETAILS
+-------------------------------*/
+.features div:first-child{
+  padding-bottom: 0;
+}
+.flex-item{
+  flex: 0 1 50%;
+  /* outline: 1px solid black; */
+}
+.product_img{
+  margin-top: 0;
+  font-size: 0;
+  text-align: center;
+
+}
+.sku {
+  border-bottom: 1px solid #dadada;
+  text-align: left;
+  color: darkgrey;
+  margin-bottom: 1.5em;
+  flex: 100%;
+  }
+.sku span{
+  display: inline-block;
+  margin-right: 1em;
+}
+
+
+/* PRODUCT SPECIFICATIONS
+-------------------------------*/
+.specification{
+  padding-top: 2em;
+}
+.specification h3{
+  flex: 0 1 100%;
+}
+.specification table{
+  flex: 0 1 47%;
+}
+
+.tablenote{
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* UNIQUE SELLING POINTS
+-------------------------------*/
+
+.usp i{
+  font-size: 3em;
+}
+.usp h4{
+  margin-bottom: 0.8em;
+}
+.usp-wrapper{
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin-top: 4em;
+
+}
+.usp-list{
+  flex: 0 1 25%;
+  padding: 0 1em;
+
+}
+
+/* PRODUCT PHOTOS
+-------------------------------*/
+
+.gallery h2{
+  flex: 0 1 100%;
+  text-align: center;
+  margin: 0 auto 1em auto;
+}
+
+.product, .accessories{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+.product figure{
+  flex: 0 1 43%;
+  /* outline: 1px solid lightgrey; */
+  margin: 1%;
+  text-align: center;
+}
+
+.mounted{
+  margin: 1em auto 0 auto;
+  max-width: 88%;
+}
+
+
+
+section.vid{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.youtube{
+  padding:6em 0;
+
+}
+.youtube .byline{
+  margin-bottom: 2em;
+}
+video{
+  max-width: 80%;
+}
+
+
+
+
+/* Information
+-------------------------------*/
+.info{
+  margin-top: 6em;
+}
+.info .byline{
+  margin-bottom: 0;
+}
+.info .byline a{
+  display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-bottom:1px solid white;
+}
+.info .byline a:hover{
+  border-bottom:1px dotted lightgrey;
+
+}
+.info .content-wrap p, .info .content-wrap ul{
+  max-width: 70%;
+}
+.info .content-wrap{
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.shipping p{
+  margin-bottom: 0;
+}
+.shipping ul{
+  margin-top: 0.2em;
+  margin-bottom: 3em;
+}
+.shipping .content-wrap{
+    background-image: url(https://i.loli.net/2021/04/28/axObYNRpl59UoAB.png);
+    background-repeat: no-repeat;
+    background-position: 90% 80%;
+}
+
+.payment .content-wrap{
+    background-color: #ededed;
+    background-image: url(https://i.loli.net/2021/04/28/D7rjeJAvPOn4hCp.png);
+    background-repeat: no-repeat;
+    background-position: 90% 55%;
+}
+
+.warranty .content-wrap{
+    background-color: white;
+    background-image: url(https://i.loli.net/2021/04/28/QDXybPdjlBiMxLG.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.return .content-wrap{
+    background-color: #ededed;
+    background-image: url(https://i.loli.net/2021/04/28/SAOJkyvGcazD9LN.png);
+    background-repeat: no-repeat;
+    background-position: 90% 70%;
+}
+
+.customer-support .content-wrap{
+    background-color: white;
+    background-image: url(https://i.loli.net/2021/04/28/J7EsVZfN5OH6gmG.png);
+    background-repeat: no-repeat;
+    background-position: 90% 70%;
+}
+
+/* Brand Breif
+-------------------------------*/
+
+.flex_center{
+  display: flex;
+  flex-flow: row wrap;
+  /* border-bottom: 1px dotted lightgrey; */
+  padding-bottom: 1em;
+
+}
+
+.brand-img{
+  max-width: 50%;
+  margin-top: 2%;
+}
+
+.brand-content{
+  flex: 0 0 40%;
+}
+.brand-img{
+  flex: 0 0 50%;
+  margin-left: 4%;
+  margin-bottom: 3%;
+}
+
+
+/* Footer
+-------------------------------*/
+
+ a.btn{
+   text-decoration: none;
+   background:#ef233c;
+   color: white;
+   display: inline-block;
+   margin-top: 1.5em;
+   padding: 0.3em 1em;
+   font-size: 1em;
+   font-weight: 700;
+   /* outline: 1px solid black; */
+ }
+
+
+/* Responsive (Media Queries)
+-------------------------------*/
+
+@media (max-width: 999px) {
+
+  /* PRODUCT DETAILS
+  -------------------------------*/
+  .brand-img{
+    max-width: 90%;
+    margin-top: 3%;
+  }
+  .certification{
+    display: block;
+  }
+
+  .product_img{
+    margin-top: 0;
+    font-size: 0;
+    text-align: center;
+    align-self: baseline;
+    padding-top: 4%;
+  }
+}
+
+@media (max-width: 899px) {
+
+
+}
+@media (max-width: 850px) {
+
+/* USP
+-------------------------------*/
+
+.usp-list{
+    flex: 0 1 50%;
+
+}
+div.usp-list{
+    flex: 0 1 50%;
+}
+div.usp-list:nth-of-type(3), div.usp-list:nth-of-type(4){
+  margin-top: 3%;
+}
+
+
+.flex_center{
+  display: block;
+  margin-bottom: 4%;
+}
+  .brand-img{
+    max-width: 100%;
+    margin: 0;
+
+  }
+
+
+@media (max-width: 729px) {
+
+.features .flex{
+    display: block;
+  }
+.product_img{
+  padding-top: 0;
+}
+/* SPECIFICATIONS
+-------------------------------*/
+.specification{
+  display: block;
+}
+.specification table{
+  max-width: 100%;
+}
+.specification table{
+  width: 100%;
+}
+.tbl-right{
+  margin-top: 0;
+}
+td{
+  padding-left: 3em;
+}
+/* INFO
+-------------------------------*/
+.info .content-wrap p, .info .content-wrap ul{
+  max-width: 100%;
+}
+
+
+}
+@media (max-width: 539px){
+
+h2{
+  line-height: 1.25;
+  padding-bottom: 0.2em;
+}
+  .flex{
+    display: block;
+  }
+.product{
+  display: block;
+}
+}
+
+@media (max-width: 499px){
+  body, ul{
+    line-height: 1.5;
+  }
+  .content-wrap{
+    padding: 3em 2.5em 3em 2.5em;
+  }
+  #mrhorn_logo{
+    display: block;
+    width: 40%;
+    margin: -1% auto 3% auto;
+  }
+  h1{
+    font-size: 1em;
+  }
+  header{
+    padding-bottom: 6%;
+  }
+  nav{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: #EF233C;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  nav a:nth-child(2){
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+  }
+  .product_img{
+    width: 100%;
+  }
+  tr:first-child th, tr:first-child td{
+    padding-top:0;
+  }
+  .youtube .byline, .info .byline{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
